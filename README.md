@@ -1,4 +1,4 @@
-# Discrete-Stochastic-Search
+# Discrete-Stochastic-Search-For-Behavioral-Intervention
 
 Behavioral interventions (such as those developed to increase physical activity, achieve smoking cessation, or weight loss) can be represented as dynamic process systems incorporating a multitude of factors, ranging from cognitive (internal) to environmental (external) influences. This facilitates the application of system identification and control engineering methods to address questions such as: what drives individuals to improve health behaviors (such as engaging in physical activity)?
 <br>
