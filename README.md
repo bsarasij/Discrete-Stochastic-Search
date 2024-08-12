@@ -29,16 +29,20 @@ The work presents a Discrete Simultaneous Perturbation Stochastic Approximation 
 
 ## Implementation of DSPSA
 * Initialize input vector 𝜃 at a given step 𝑘.
-* Generate random perturbation Δ as per" Bernoulli ±1 distribution"
-* Perturb 𝜃 by ±𝑐Δ to generate  𝜃^+,𝜃^− 
-* Evaluate system (y) at 𝜃^+ and 𝜃^− 
+* Generate random perturbation Δ as per " Bernoulli ±1 distribution"
+* Perturb 𝜃 by ±𝑐Δ to generate  $𝜃^+$ , $𝜃^{−}$ 
+* Evaluate system (y) at $𝜃^+$ and $𝜃^−$ 
 * Approximate gradient:
   
-  $\hat{g_{k}}=\frac{J(\hat{\theta}_{k}^{+})-J(\hat{\theta}_{k}^{-})}{2c_{k}\Delta_{k}}$
-
+  ```math
+  \hat{g_{k}}=\frac{J(\hat{\theta}_{k}^{+})-J(\hat{\theta}_{k}^{-})}{2c_{k}\Delta_{k}}
+  ```
 
 * Update input vectors:
-
+  
+```math
+\hat{\theta}_{k+1} = \hat{\theta}_{k} - a_{k}\hat{g_{k}}
+```
 
 * Repeat (2)-(6) for iteration k+1
 
